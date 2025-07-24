@@ -1,0 +1,30 @@
+.button {
+    padding: 0.6em 1.3em;
+    border-radius: 1em;
+    border: solid 3px #0e588d;
+    border-right-color: #0e4267;
+    border-bottom-color: #0e4267;
+    color: white;
+    font-family: inherit;
+    font-size: 1.2em;
+    background-image: linear-gradient(to bottom right, #064878, #0b2c5d);
+    cursor: pointer;
+    transition: background-image 0.3s ease, border-color 0.2s ease;
+}
+
+.button:hover {
+    border: solid 3px #082652;
+    border-right-color: #053455;
+    border-bottom-color: #053455;
+    background-image: linear-gradient(to bottom right, #0b2c5d, #06426c );
+}
+
+.button:focus,
+.button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

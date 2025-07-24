@@ -1,0 +1,61 @@
+.iButton {
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    border-radius: 2em;
+    border: solid white 3px;
+    background-color: transparent;
+    color: white;  
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: 1000;
+    cursor: pointer;
+    z-index: 9;
+}
+.xButton {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 2.3em;
+    height: 2.3em;
+    padding: 0;
+    border: none;
+    border-radius: 2em;
+    background: transparent;
+    font-weight: 1000;
+    font-size: 0.8em;
+    font-family: inherit;
+    color: white;
+    outline: solid rgba(170, 15, 15, 0.7)  3px;
+    -webkit-text-stroke: 01.5px white;
+    background-image: linear-gradient(to bottom right, rgba(232, 6, 6, 0.6) , rgba(106, 19, 19, 0.8) );
+    cursor: pointer;
+}
+.infoWindow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    max-width: 700px;
+    padding: 2em 3em;
+    border-radius: 2em;
+    outline: solid 5px rgba(255, 255, 255, 0.95);
+    color: #213547;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+    text-align: left;
+    z-index: 9;
+}
+
+@media (max-width: 600px) {
+    .iButton {
+        right: 1.3em;
+    }
+    .infoWindow {
+        width: 85vw;
+        padding: 2em 1em 1em 1em;
+    }
+}

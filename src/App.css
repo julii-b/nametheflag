@@ -1,0 +1,26 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+#quizContainer {
+    width: 350px;
+    max-width: 80vw;
+    padding: 2em 3em;
+    margin: auto;
+    border-radius: 2em;
+    outline: solid 5px rgba(255, 255, 255, 0.5);
+    color: #213547;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8));
+  
+}
+
+@media (max-width: 600px) {
+    #quizContainer {
+        width: initial;
+        min-width: 70vw;
+        padding: 1em 1em;
+    }
+}

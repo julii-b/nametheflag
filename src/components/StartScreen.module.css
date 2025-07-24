@@ -1,0 +1,11 @@
+.startScreenWrapper {
+    padding: 0 0 1em 0;
+}
+.logo{
+    max-width: 200px;
+}
+.gameName{
+    margin-top: 0;
+    font-size: 3em;
+    font-weight: bold;
+}

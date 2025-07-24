@@ -1,0 +1,112 @@
+.flag {
+    display: block;
+    max-width: 80vw;
+    max-height: 30vh;
+    margin: 0 auto;
+}
+
+.flagCounter {
+    position: relative;
+    top: -1em;
+    height: 0;
+    font-weight: 600;
+}
+
+.score {
+    position: relative;
+    top: -0.5em;
+    right: -0.5em;
+    height: 0.5em;
+    width: 100%;
+    margin: 0 0 0 auto;
+    rotate: 5deg;
+    font-family: "Winky Rough", sans-serif;
+    font-size: 3em;
+    text-align: right;
+    color: #960000;
+    -webkit-text-stroke: 1px white;
+    /* text-stroke: 1px white; */
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: italic;
+}
+.posScoreChange, .noScoreChange {
+    position: relative;
+    top: 0.8em;
+    right: -1.6em;
+    height: 0em;
+    width: 100%;
+    margin: 0 0 0 auto;
+    font-family: "Winky Rough", sans-serif;
+    color: #f0f0f0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: right;
+}
+.posScoreChange div, .noScoreChange div {
+    width: 100px;
+    margin: 0 0 0 auto;
+    padding: 5px;
+    border-radius: 100px;
+    text-align: center;  
+}
+.posScoreChange div {
+    background-color: #0a9c19e9;
+}
+.noScoreChange div {
+  background-color: #900000e9;
+}
+.overlayWrong {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.1);
+    z-index: 9999;  
+}
+.flagNameCorrect, .flagNameWrong, .flagNameCorrectLong, .flagNameWrongLong {
+    padding: 0.5em 0 0.35em;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+}
+.flagNameWrong, .flagNameWrongLong {
+    color: #900000;
+}
+.inputWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 1em;
+    width: 100%;
+    min-height: 3em;
+    padding: 2em 0 1em;
+}
+.flagNameInput {
+    flex-grow: 1;
+    width: 1px;
+    padding: 0.6em 0.8em;
+    border-radius: 1em;
+    border: solid 3px #0e588d;
+    border-right-color: #0e4267;
+    border-bottom-color: #0e4267;
+    font-family: "Winky Rough", sans-serif;
+    font-size: 1.2em;
+}
+    
+@media (max-width: 600px) {
+    .flagCounter {
+        top: -0.2em;
+        height: 0.5em;
+        font-size: 0.9em;
+    }
+    .score {
+      top: -0.8em;
+    }
+    .posScoreChange, .noScoreChange {
+      top: -0.1em;
+      right: -1.3em;
+    }
+}
