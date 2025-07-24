@@ -47,7 +47,7 @@ function InfoWindowInfo({onClose}: {onClose: ()=>void}): JSX.Element {
                     <li><strong>Styling:</strong> CSS Modules</li>
                     <li><strong>3rd party APIs:</strong>
                         <ul>
-                            <li><a href="https://flagcdn.com/" target="_blank" rel="noopener noreferrer">Flags API & CDN</a> by <a href="https://flagpedia.net/" target="_blank" rel="noopener noreferrer">Flagpedia.net</a></li>
+                            <li><a href="https://flagcdn.com/" target="_blank" rel="noopener noreferrer">Flags API & CDN</a> by <a href="https://flagpedia.net/" target="_blank" rel="noopener noreferrer">Flagpedia.net</a> for flag images</li>
                             <li><a href="https://restcountries.com/" target="_blank" rel="noopener noreferrer">REST Countries API</a> for country names in 26 languages</li>
                         </ul>
                     </li>
