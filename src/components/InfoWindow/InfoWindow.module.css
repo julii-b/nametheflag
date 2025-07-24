@@ -39,8 +39,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
     width: 60vw;
     max-width: 700px;
+    max-height: 70vh;
     padding: 2em 3em;
     border-radius: 2em;
     outline: solid 5px rgba(255, 255, 255, 0.95);
@@ -48,6 +51,11 @@
     background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
     text-align: left;
     z-index: 9;
+}
+.scrollableArea{
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
 }
 
 @media (max-width: 600px) {
