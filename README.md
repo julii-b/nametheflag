@@ -1,69 +1,38 @@
-# React + TypeScript + Vite
+## <img src="public/logo.png" alt="nametheflag logo" width="60"/> nametheflag
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a fun little project built with React.
+I love learning about flags and wanted to build something fun that combines my interest in flags with my interest in frontend development.
 
-Currently, two official plugins are available:
+Play it here: [nametheflag.julius-busch.com](https://nametheflag.julius-busch.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 About the Game
 
-## Expanding the ESLint configuration
+nametheflag tests your knownledge of the flags of the world. You are shown a random flag and you have to guess the country name as quickly as possible. It has the following features:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⛳ Fast rounds and immediate feedback.
+- 🌍 Checks the country names in 26 languages.
+- 🎉 Local high score based on the number of correct guesses and needed time.
+- 📱 Responsive design.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+This project was built using:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Framework: **React**
+- Language: **TypeScript**
+- Build Tool: **Vite**
+- Styling: **CSS Modules**
+- 3rd party APIs:
+  - [**Flags API & CDN**](https://flagcdn.com/) by [Flagpedia.net](https://flagpedia.net/) for flag images
+  - [**REST Countries API**](https://restcountries.com/) for country names in 26 languages
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Installation (for local development)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To run the project locally:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/julii-b/nametheflag.git
+cd nametheflag
+npm install
+npm run dev
 ```
