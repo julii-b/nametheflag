@@ -18,13 +18,13 @@ nametheflag tests your knownledge of the flags of the world. You are shown a ran
 
 This project was built using:
 
-- Framework: **React**
-- Language: **TypeScript**
-- Build Tool: **Vite**
-- Styling: **CSS Modules**
-- 3rd party APIs:
-  - [**Flags API & CDN**](https://flagcdn.com/) by [Flagpedia.net](https://flagpedia.net/) for flag images
-  - [**REST Countries API**](https://restcountries.com/) for country names in 26 languages
+- **Framework:** React
+- **Language:** TypeScript
+- **Build Tool:** Vite
+- **Styling:** CSS Modules
+- **3rd party APIs:**
+  - [Flags API & CDN](https://flagcdn.com/) by [Flagpedia.net](https://flagpedia.net/) for flag images
+  - [REST Countries API](https://restcountries.com/) for country names in 26 languages
 
 ## 📦 Installation (for local development)
 
