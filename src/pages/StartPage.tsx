@@ -1,6 +1,6 @@
 import type { JSX } from 'react';
-import styles from './StartScreen.module.css';
-import Button from "./ui/Button";
+import styles from './StartPage.module.css';
+import Button from "../components/Button";
 import useEnterKey from '../hooks/useEnterKey';
 
 /**

@@ -1,5 +1,5 @@
-import Button from "./ui/Button";
-import styles from './FinalScoreScreen.module.css'
+import Button from "../components/Button";
+import styles from './FinalScorePage.module.css'
 import useEnterKey from "../hooks/useEnterKey";
 
 import { useWindowSize } from 'react-use'
@@ -15,7 +15,7 @@ import type { JSX } from "react";
  * @param {()=>void} props.onStart - Function to inform the parent component, that a new game should be started.
  * @returns {JSX.Element}
  */
-function FinalScoreScreen({finalScore, highScore, onStart}: {
+function FinalScorePage ({finalScore, highScore, onStart}: {
     finalScore: number, highScore: number|undefined, onStart: () => void 
 }): JSX.Element {
 
@@ -68,4 +68,4 @@ function FinalScoreScreen({finalScore, highScore, onStart}: {
     );
 }
 
-export default FinalScoreScreen;
+export default FinalScorePage ;

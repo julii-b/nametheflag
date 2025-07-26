@@ -2,7 +2,7 @@ import React, {useEffect, useState, useRef, type JSX} from 'react';
 import {distance} from 'fastest-levenshtein';
 
 import styles from './FlagGuessing.module.css';
-import type {Flag} from './../../types';
+import type {Flag} from '../../types';
 import preloadImages from '../../utility/preloadImages';
 import FlagGuessingForm from './FlagGuessingForm';
 import FlagGuessingResult from './FlagGuessingResult';

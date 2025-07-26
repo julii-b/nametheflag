@@ -1,7 +1,7 @@
 import { useState, type JSX} from "react";
 
 import styles from './FlagGuessing.module.css';
-import Button from "../ui/Button";
+import Button from "../../components/Button";
 
 /**
  * Renders the current flag, an input field and a button to submit the guess.

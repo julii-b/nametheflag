@@ -5,12 +5,12 @@ import './App.css';
 import type {Flag} from './types.ts';
 import {retrieveFlags} from './services/flagService.ts';
 
-import LoadingSpinner from './components/ui/LoadingSpinner';
-import ScrollIntoViewOnKeyboard from './components/ui/ScrollIntoViewOnKeyboard.tsx';
-import StartScreen from './components/StartScreen.tsx';
-import FinalScoreScreen from './components/FinalScoreScreen.tsx';
-import FlagGuessingContainer from './components/FlagGussing/FlagGuessingContainer.tsx';
-import InfoWindowContainer from './components/InfoWindow/InfoWindowContainer.tsx';
+import LoadingSpinner from './components/LoadingSpinner.tsx';
+import ScrollIntoViewOnKeyboard from './components/ScrollIntoViewOnKeyboard.tsx';
+import StartPage from './pages/StartPage.tsx';
+import FinalScorePage from './pages/FinalScorePage.tsx';
+import FlagGuessingPage from './pages/FlagGussing/FlagGuessingContainer.tsx';
+import InfoWindow from './pages/InfoWindow/InfoWindowContainer.tsx';
 
 
 function App() {
@@ -64,19 +64,19 @@ function App() {
   return (
     <>
     <ScrollIntoViewOnKeyboard targetRef={quizContainerRef} />
-    <InfoWindowContainer />
+    <InfoWindow />
     <div id="quizContainer" ref={quizContainerRef}>
       {step == "loading" && (
         <p><LoadingSpinner /><br/>loading...</p>
       )}
       {step == "start" && (
-        <StartScreen onStart={handleStartGuessing}/>
+        <StartPage onStart={handleStartGuessing}/>
       )}
       {step == "guess" && (
-        <FlagGuessingContainer scoreState={[score, setScore]} flags={flags} onEndGuessing={handleEndGuessing} />
+        <FlagGuessingPage scoreState={[score, setScore]} flags={flags} onEndGuessing={handleEndGuessing} />
       )}
       {step == "showScore" && (
-        <FinalScoreScreen finalScore={score} highScore={highScore} onStart={handleStartGuessing}/>
+        <FinalScorePage finalScore={score} highScore={highScore} onStart={handleStartGuessing}/>
       )}
     </div>
     </>
